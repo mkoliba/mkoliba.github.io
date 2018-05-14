@@ -290,3 +290,28 @@ Wide styles
  	float: left;
  	width: 50%;
 }
+
+circle {
+	fill: red;
+	stroke: #aaa;
+}
+
+#vis {
+	width: 600px;
+	float:left;
+	display: block;
+	width: 100%;
+	
+}
+#line {
+	width: 600px;
+	float:left;
+	display: block;
+	
+}
+
+.block-100{
+	display: block;
+	width: 100%;
+	clear: left;
+}

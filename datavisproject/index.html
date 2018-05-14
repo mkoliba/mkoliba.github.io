@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Data Visualisation - Assigment 1</title>
+    <title>Data Visualisation - New York Citi Bike project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
 
@@ -71,13 +71,80 @@
           
           <script type="text/javascript" src="javascript/nyc_map.js"></script>
           
-          
-          <!--
+          <h2>Part 2</h2>
+          <div id="vis">
+              <p>The barchart provides the total 
+                  number of trips for each hour of the the selected 
+                  day of the month.&nbsp; Most days follow the same pattern as expected 
+                  with rush hours have a peak of&nbsp; the number of trips, while weekend 
+                  days 3,4,10,11,17,18,24,25 and 31 have a different pattern,
+                   whrere the peak is in the middle of the day.</p>
+              <form>
+                <label for="Day">
+                  <h3>
+                    <span style="text-decoration: underline; color: #339966;">
+                      <strong>Select the day of this month (March-2018)</strong>
+                    </span>
+                  </h3>
+                </label>
+                <input type="range" min="1" max="31" step="1" id="day" value="1" oninput="selected_day.value = day.value">
+                <output name="selected_day" id="selected_day">1</output>
+              </form>
+            </div>
+            <div class="block-100" >
+                <p> This plot represent the three gender categories men, 
+                    women and unknown It provides the average trip dursation 
+                    for each category in the certain age range and.
+                     It can be seen that the unknown trips are less regular,
+                      while men and women are closed in thier trip duragen in average. They vary alot in some days though.  
+                    </p>
+            <div id="line">
+              <form>
+                <label for="Day">
+                  <h3>
+                    <span style="text-decoration: underline; color: #339966;">
+                      <strong>Select the day of this month (March-2018)</strong>
+                    </span>
+                  </h3>
+                </label>
+                <input type="range" min="1" max="31" step="1" id="gender" value="1" oninput="selected_gender.value = gender.value">
+                <output name="selected_gender" id="selected_gender">1</output>
+              </form>
+            </div>
+            <div id="legend_graph">
+                <h4>Legend</h4>
+                <ul>
+                  <li><span style="color: red">Red -</span>  Female</li>
+                  <li><span style="color: blue">Blue -</span> Male</li>
+                  <li><span style="color: green">Green -</span> Unknown gender</li>
+                </ul>
+              </div>
+            </div>
+            <script src="javascript/tripbyHours.js"></script>
+            <script src="javascript/genders.js"></script>
+            
+           
+            <div class="block-100">
+          <h3>Data: </h3>
+          <ul>
+            <li>
+              <a href="https://www.citibikenyc.com/system-data">Citi Bike Data sources</a>
+            </li>
+            <li>
+              <a href="https://s3.amazonaws.com/tripdata/201803-citibike-tripdata.csv.zip">Used Data set</a>
+            </li>
+          </ul>
 
-           <script type="text/javascript" src="javascript/nyc-map.js"></script>
-          -->
-
-          
+          <h3>Git Hub repository: </h3>
+          <ul>
+            <li>
+              <a href="https://github.com/mkoliba/mkoliba.github.io/tree/master/datavisproject">Project Git Hub hosting</a>
+            </li>
+            <li>
+                <a href="https://github.com/mkoliba/Data-Visualisation">Original Repository</a>
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
     </div>
