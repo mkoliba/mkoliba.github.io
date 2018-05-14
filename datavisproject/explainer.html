@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Visualisation - Assigment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
+
+    <!-- icons -->
+    <!--
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    -->
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+        $(function () {
+            $("#includedContent").load("menu.html");
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="header-heading">New York CitiBike project</h1>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <div class="container">
+            <div id="includedContent"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="main">
+                <div class="markdown-body">
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <ol>
+                                        <li>
+                                            <p>
+                                                <strong>Motivation</strong>.</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>The data set used for this project is bike trips from Citibike data
+                                                            In NYC&nbsp; during the month of March-2018. It is a data set
+                                                            with 976650 rows, which provides 20 intreis about each bike trip
+                                                            taken in Manhattan, Queens and Brooklyn. </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>This dataset was chosen because it can be used to visualize an important
+                                                            clean transportation method, how people use it and what affect
+                                                            their use. Looking deeper into the data, it was found to be clean
+                                                            and relatively easy to work with.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The goal for the end user experience was to get to know about the
+                                                            project and paint a picture about how the stations are located
+                                                            and give basic info about how people use this system. Another
+                                                            aim is to inform the user about some insight regarding bikers'
+                                                            behaviour and maybe comparing it to other kinds of transportation
+                                                            methods.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Basic stats</strong>. </p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Working with the data showed that it will be overloading and slow
+                                                            to use the original data set.Therefore, all the needed data information
+                                                            was calculated by python mainly Pandas. Dataframes were made
+                                                            out of the originaldata according to the goal of the visualization
+                                                            element. </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>During the exploratory data analysis, it was necessary to find&nbsp;
+                                                            the mean, median, max, min&nbsp; of the corresponding&nbsp; columns.
+                                                            Frequencies of sevaral values and so on. Several plots were made
+                                                            in each step to get an overview of what can be meaningful to
+                                                            visualize. Also to catch outliers and wrong data. Time pasing
+                                                            and converting between types was also needed. All NaNs has been
+                                                            deleted from the data and also the unrealistic data has been
+                                                            deleted. </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Genre</strong>. The genre used in this project is a combination of annotated
+                                                map/chart and and partitioned poster.</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>&nbsp;
+                                                            <strong>Visual Narrative</strong>&nbsp; For visual structuring, of the
+                                                            page a cosistent visual platform was used to help the user make
+                                                            connection between the different visualizations.&nbsp; For hiligting,
+                                                            zooming motion and feature distinction to help the user focus
+                                                            on important details in the storie. For transition guidance,
+                                                            the page seeks object continuity to give a smoothe flow of the
+                                                            story.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            <strong>Narrative Structure</strong> For ordering: linear path has been
+                                                            used to give an overview and the choice to the reader to focus
+                                                            on which part after listing charts. For interactivity,hoover,
+                                                            highlighting and filtering has been enabeled in the presented
+                                                            visualizations to allow the user get certain details and lead
+                                                            them through the visualization. For messaging, annotations and
+                                                            headlines to give a clear guidance on where the user stands immediately.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Visualizations</strong>.</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Explain the visualizations: The map show a few NYC Boroughs and part
+                                                            of Jersey city. Dots on map represent Citi Bike docking stations 
+                                                            which were starting or end point of trips in the March 2018. 
+                                                            The barchart under the map shows how many bikes were rented within the 
+                                                            10 minute time block. If you select particular bar or toggle animation, 
+                                                            color of the stations change based on scale. If more bikes were lended more 
+                                                            from beginig of the day from the station than returned then station color will be more yellow. 
+                                                            In oposite situation it will be more blue.</p>
+                                                        <p>    
+                                                            .The barchart gives the
+                                                            user the possibility to slide between different month days to
+                                                            see how the number of trips changes. The curve in the second
+                                                            plot gives an overview of how different ganders and ages use
+                                                            the system by looking at their trip duration. The user has the
+                                                            possibility to chose a certain day of the month. </p>
+                                                    </li>
+                                                    <li>These visualizations can provide some insight about the whole system
+                                                        but in a simple way show differences beween stations and days. </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Discussion</strong>. Think critically about your creation</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>What went wel: The map gives a good overviow of how users' use changes
+                                                            during the month. The plots give an easy way to create a story
+                                                            about the way people according to their age and gender differ
+                                                            in using citibikes.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>&nbsp;Still missing: Comparing this dataset to some other datasets,
+                                                            where it could be interresting to find how they differ.</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Contributions</strong>. Who did what?</p>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <p>Riema Ali: Barchart for number of trips every day by hour during
+                                                            the month. Plot for gender differences.(And Parts of the descriptive
+                                                            page)</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Martin Koliba: Map and animated timeline.(And parts of the descriptive
+                                                            page)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 id="user-content-handing-in-project-assignment-b">Link to the GitHub page: </h3>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p>&nbsp;</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="wiki-footer" class="wiki-footer gollum-markdown-content boxed-group">
+                    <div class="boxed-group-inner wiki-auxiliary-content  markdown-body">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+
+</html>

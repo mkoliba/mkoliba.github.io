@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Visualisation - Assigment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
+
+    <!-- icons -->
+    <!--
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    -->
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- link to d3.js library-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#includedContent").load("menu.html"); 
+      });
+      </script> 
+  </head>
+
+
+  <body>
+
+    <div class="header">
+      <div class="container">
+        <h1 class="header-heading">New York Citi Bike project</h1>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="container">
+        <div id="includedContent"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="main">
+          <!--Part 1 -->
+          <h2>Stations & ration of rents/returns </h2>
+          <p>The map bellow shows Citi Bike stations from NYC March 2018 dataset. The bar chart below map shows how many bikes were rented within the 10-minute time block on 1.3.2018. We can clearly see that people used bike most during the rush hours. 
+
+              </p>
+
+              <p>If the specific bar is selected then the colour of stations scale according to the ration of how many bikes were rented/returned from that station from beginning of the day to the selected moment.</p>
+              <p>
+              Between 8-10 hours we can see how people were renting bikes in the edges and returning them in the city centre. In the evening majority of the points get similar red colour from the middle of the scale as bikes distribute back.
+              </p>
+
+
+
+          
+          <svg id="nyc_map"></svg>
+          <div  id='color-legent'>
+              
+              <div class="legend_left">  100% returns - end of trip</div>
+              <div class="legend_right"> 100% rents - start of trip</div>
+            </div>
+          <svg id="nyc_timeline"></svg>
+          <p><Number of bikes rented in 10 minutes time block on 1.3.2018.</p></Number>
+          <button type="button" id="start_animation">Start Animation</button>
+          
+          <script type="text/javascript" src="javascript/nyc_map.js"></script>
+          
+          
+          <!--
+
+           <script type="text/javascript" src="javascript/nyc-map.js"></script>
+          -->
+
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        
+      </div>
+    </div>
+  </body>
+</html>
